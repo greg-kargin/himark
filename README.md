@@ -10,6 +10,18 @@ A separate backend process, the **agent host**, owns everything that touches
 the outside world: files, search, terminals, language servers, git, and
 coding agents (Claude Code and Codex).
 
+## Quick Start
+
+For a quick development setup:
+
+```sh
+cargo build                       # build the core engine and backend
+cargo test                        # run the test suite
+cargo run --release -p linux --   # launch the Linux editor shell
+```
+
+For more details on each platform, see the platform-specific sections below.
+
 ## Repository layout
 
 ```
